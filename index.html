@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de Texto Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section class="panel-cifrado">
+                <img src="imagenes/Logo.png" alt="Logo del encriptador de texto" class="logo">
+                <textarea id="texto-ingresado" placeholder="Ingrese el texto aqui"></textarea>
+                <p>&#128712; Solo letras minúsculas y sin acentos</p>
+                <button class="encriptar" onclick="capturarValorEncriptar();">Encriptar</button>
+                <button class="desencriptar" onclick="capturaValorDesencriptar();"> Desescriptar</button>
+            </section>
+
+            <section class="panel-desecriptar">
+                <textarea id="texto-generado"></textarea>
+                <button id="copiar" class="copiar" onclick="copiar();">Copiar</button>
+            </section>
+        </main>
+
+        <footer>
+            <p class="autor">Carolina Bernal / Alura Challenge Encriptador - 2024</p>
+        </footer>
+
+        <script defer src="script.js"></script>
+    </body>
+    
+</html>
